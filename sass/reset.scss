@@ -1,0 +1,46 @@
+/*all*/
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, form, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+em {
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: top;
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+textarea {
+    resize: none;
+    overflow: auto;
+}
+input, textarea {
+    outline: none;
+}
+body {
+    background: #eee;
+    font-family: PingFang TC,Avenir Next,Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+    min-width: 1080px;
+}
+body, a, button, input, select, textarea {
+    color: #000;
+    font-size: 15px;
+}
+.clearFix {
+    zoom:1;
+}
+.clearFix:after {
+    content:"";
+    display: block;
+    clear: both;
+}

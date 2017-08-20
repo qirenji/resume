@@ -1,0 +1,177 @@
+$mainColor : #43beff;
+$secondColor : #07508B;
+$thirdColor : #fff;
+$Color : #118FCF;
+
+#content {
+	width: 1060px;
+	margin: 10px auto;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.15);
+}
+#sidebar {
+	float: left;
+	position: relative;
+	width: 300px;
+	height: 100%;
+	background-color: $mainColor;
+	padding: 15px 15px 10000px;
+	margin-bottom: -10000px;
+	color: #fff;
+	line-height: 1.5;
+	box-sizing:border-box;
+
+	.header{
+		margin: 25px 0 20px;
+		text-align: center;
+		.logo{
+			display: block;
+			width: 120px;
+			margin: 0 auto 15px;
+			border-radius: 50%;
+		}
+		.name{
+			font-size:28px;
+			font-weight: normal;
+		}
+	}
+	.side-info{
+		padding-top: 20px;
+		padding-left: 10px;
+		.title{
+			font-size: 20px;
+			font-weight: normal;
+			line-height: 50px;
+			i{
+				margin-right: 4px;
+			}
+		}
+		.content {
+			font-size: 14px;
+			line-height: 24px;
+			margin-left: 25px;
+			i{
+				margin-right:4px; 
+			}
+		}
+		.skill {
+			font-size: 14px;
+			line-height: 24px;
+			margin-left: 25px;
+			position: relative;
+			.bar-wrap{
+				position: absolute;
+				right: 10px;
+				top: 3px;
+				width: 140px;
+				height: 17px;
+				background: $thirdColor;
+				border-radius: 20px;
+				.bar {
+					display: inline-block;
+					height: 17px;
+					background: $secondColor;
+					border-radius: 20px 0 0 20px;
+				}
+			}
+		}
+	}
+	.note {
+		text-indent: 2em;
+		width: 90%;
+		margin: 70px auto;
+		font-size: 18px;
+		color: $secondColor;
+	}
+}
+
+#main{
+	float: left;
+	position: relative;
+  width: 720px;
+  padding: 15px 20px 10000px;
+  background: #fff;
+  margin-bottom: -10000px;
+  .section{
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  	h2 {
+  		font-size: 24px;
+  		color: $Color;
+  		font-weight: normal;
+  		margin-bottom: 15px;
+  		line-height: 40px;
+  		border-bottom: 1px solid $Color;
+  	}
+  	.info {
+  		font-size: 15px;
+  		line-height: 28px;
+  		margin-left: 35px;
+  		margin-top: 20px;
+  		color: #666;
+  		.proList{
+  				padding: 0px 30px 20px 30px;
+  				border-left: 2px solid $mainColor;
+  			}
+  		.title{
+  			color: #000;
+  			font-weight: bold;
+  			padding-right: 4px;
+  			position: relative;
+
+  			.circle{
+  				position: absolute;
+  				left: -38px;
+  				top: 0px;
+  				width:14px;
+  				height: 14px;
+  				border-radius: 50%;
+  				background: $mainColor;
+  			}
+  			h3 {
+  				font-size: 18px;
+					line-height: 1;
+					margin-bottom: 10px;
+	  			.link{
+	  				position: relative;
+	  				top: -2px;
+	  				margin-left: 20px;
+	  				margin-right: -10px;
+	  				border: 1px solid #EF6D8E;
+	  				border-radius: 6px;
+	  				padding: 1px 4px;
+	  				font-size: 14px;
+	  				i{
+	  					vertical-align: center;
+	  				}
+	  			}
+  			}
+
+  		}
+  		.proDes{
+  			margin-top: 4px;
+  			p{
+  				line-height: 1.8;
+  			}
+  		}
+  		a {
+  			color: #EF6D8E;
+  		}
+  	}
+  }
+}
+
+footer {
+	margin: 30px 0 20px;
+	p{
+		text-align: center;
+		color: #616161;
+		font-size: 14px;
+		a{
+			color: #EF6D8E;
+			font-size: 13px;
+		}
+	}
+}
