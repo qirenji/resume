@@ -33,6 +33,7 @@ var data = {
 	],
 	note:[
 		'我是一个充满活力，热爱生活的前端工程师，并且善于发现问题、解决问题、勇于改进。',
+		'工作积极主动、具备良好的自律性和自我驱动能力。',
 		'希望寻找一个前端开发的岗位，赶快联系我吧！！！'
 	],
 	infoList: [
@@ -71,12 +72,30 @@ var data = {
 				},
 				{
 					title:'Demo',
-					url:'http://60.205.181.124:18003'
+					url:'http://music.qirenji.com'
 				},
 			],
 			msg:[
-				'Vue实现的简易在线音乐平台，调用QQ音乐API实现音乐的搜索。使用HTML5中的Audio标签对音乐进行控制。',
-				'技术栈HTML5，CSS3，Vue全家桶，Sass，Express，Webpack。'
+				'Vue实现的简易在线音乐平台，调用QQ音乐API实现音乐的搜索及播放。使用HTML5中的Audio标签对音乐进行播放控制。',
+				'技术栈HTML5，CSS3，Vue全家桶，Sass，Node(Express)，Webpack。'
+			],
+			images:''
+		},
+		{
+			name:'Cnode社区',
+			links:[
+				{
+					title:'源码',
+					url:'https://github.com/qirenji/cnode-vue'
+				},
+				{
+					title:'Demo',
+					url:'http://cnode.qirenji.com'
+				},
+			],
+			msg:[
+				'Vue.js打造一个开源的CNode社区，调用Cnode社区官方API实现登录，浏览、发帖、收藏、回复、点赞等功能。',
+				'技术栈:Vue全家桶，ES6，localStorage，Sass，Css3，flex'
 			],
 			images:''
 		},
@@ -89,30 +108,12 @@ var data = {
 				},
 				{
 					title:'Demo',
-					url:'http://60.205.181.124:18001'
+					url:'http://github.qirenji.com'
 				},
 			],
 			msg:[
-				'使用爬虫对GitHub上不同语言的内容进行爬取，然后显示出Star数比较多的GitHub项目排行，Vue做页面展示。',
+				'使用爬虫对GitHub上不同语言的项目进行爬取，然后显示出Star数比较多的GitHub项目排行，Vue做页面展示。',
 				'技术栈：Vue2.0，axios，request-promise，express，cheerio，ES6，sass，flex，css3'
-			],
-			images:''
-		},
-		{
-			name:'Cnode社区',
-			links:[
-				{
-					title:'源码',
-					url:'https://github.com/qirenji/node-vue'
-				},
-				{
-					title:'Demo',
-					url:'http://60.205.181.124:18000'
-				},
-			],
-			msg:[
-				'Vue.js打造一个开源的CNode社区，调用Cnode社区API实现登录，浏览、发帖、收藏、回复、点赞等功能。',
-				'技术栈:Vue全家桶，ES6，localStorage，Sass，Css3，flex'
 			],
 			images:''
 		},
@@ -125,12 +126,12 @@ var data = {
 				},
 				{
 					title:'Demo',
-					url:'http://60.205.181.124:18002'
+					url:'http://movie.qirenji.com'
 				},
 			],
 			msg:[
 				'豆瓣电影收集，可实现对电影的资源的后台录入，前端展示和用户登录等功能。',
-				'技术栈：jade，jquery，bootstrap，less，grunt，nodejs，mongodb'
+				'技术栈：pug(jade)，jquery，bootstrap，less，gulp，nodejs，mongoDB'
 			],
 			images:''
 		},
@@ -143,11 +144,11 @@ var data = {
 				},
 				{
 					title:'Demo',
-					url:'http://60.205.181.124:18003'
+					url:'http://chat.qirenji.com'
 				},
 			],
 			msg:[
-				'Vue打造的智能聊天室，兼容手机和PC。分别使用青云客智能机器人接口和socket.io，实现在线智能聊天和多用户聊天功能。',
+				'Vue打造的智能聊天室，兼容手机和PC。使用青云客智能机器人API接口和socket.io通信，实现在线智能聊天和多用户聊天功能。',
 				'技术栈：Vue全家桶+Sass+flex+Socket.io+Express+localStorage'
 			],
 			images:''
@@ -161,7 +162,7 @@ var data = {
 				},
 				{
 					title:'Demo',
-					url:'http://60.205.181.124:18002'
+					url:'http://www.qirenji.info/practices/select-plugin'
 				},
 			],
 			msg:[
@@ -173,33 +174,24 @@ var data = {
 	],
 	skillText:[
 		{
-			name:'HTML / CSS',
+			name:'前端',
 			msg:[
-				'能够编写语义化 的HTML，模块化的 CSS，完成较复杂的布局',
-				'熟悉 Less Sass PostCSS Autoprefixer 等CSS预处理和模块化工具'
-			]
-		},
-		{
-			name:'JavaScript',
-			msg:[
-				'熟悉原生 Javascript，能脱离 jQuery 等类库编码',
-				'能运用模块化、面向对象的方式编程',
-				'了解 React AngularJS jQuery 的使用'
+				'能够编写语义化的 HTML，掌握HTML5、CSS3，熟悉 Less Sass 等CSS预处理器',
+				'掌握原生 Javascript(ES5、ES6)，能脱离 jQuery 等类库编码，熟悉面向对象编程',
+				'熟练使用vue.js框架及其全家桶、了解微信小程序'
 			]
 		},
 		{
 			name:'后端',
 			msg:[
-				'了解 Node.js 的开发，使用 MongoDB 和 Redis 做数据存储和缓存，使用 pm2 和 Docker 部署'
-				
+				'熟悉 Node.js, 使用过Express、koa框架,了解数据库 MongoDB 的开发，使用过 pm2 部署'
 			]
 		},
 		{
 			name:'其他',
 			msg:[
-				'熟悉 Webpack Gulp 等前端自动化工具',
-				'了解前端安全、性能优化方面的一些知识',
-				'有 HTML5 音乐播放器（APlayer）、视频播放器（DPlayer）开发经验'
+				'熟悉 Grunt、Gulp等前端自动化工具，了解Webpack打包工具',
+				'熟悉Git、Svn等版本控制工具'
 			]
 		}
 	]

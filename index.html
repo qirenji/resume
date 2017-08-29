@@ -17,6 +17,12 @@
 				<h1 class="name">{{info.cvName}}</h1>
 			</div>
 			<div class="side-info">
+				<h2 class="title"><i class="icon-bookmark"></i>Application. 应聘岗位</h2>
+				<ul>
+					<li class="content apply">{{info.job}}</li>
+				</ul>
+			</div>
+			<div class="side-info">
 				<h2 class="title"><i class="icon-bookmark"></i>Contact. 联系方式</h2>
 				<ul>
 					<li class="content" v-for="item in contactMe">
@@ -25,13 +31,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="side-info">
-				<h2 class="title"><i class="icon-bookmark"></i>Application. 应聘岗位</h2>
-				<ul>
-					<li class="content">{{info.job}}</li>
-				</ul>
-			</div>
-			<div class="side-info">
+			<!-- <div class="side-info">
 				<h2 class="title"><i class="icon-bookmark"></i>Skill. 技能点</h2>
 				<ul>
 					<li class="skill" v-for="item in skill">
@@ -39,14 +39,14 @@
 						<span class="bar-wrap"><span class="bar" v-bind:style="{width: item.length}"></span></span>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 			<div class="note">
 				<p v-for="item in note">{{item}}</p>
 			</div>
 		</div>
 		<div id="main">
 			<div class="section">
-				<h2><i class="icon-bookmark"></i>Basic info. 基本信息</h2>
+				<h2><i class="icon-bookmark"></i>个人简历</h2>
 				<ul class="info">
 					<li v-for="item in infoList">
 						<span class="title">{{item.title}}:</span> 
@@ -71,6 +71,9 @@
 							<img v-if="item.images" :src="item.images">
 						</div>
 					</li>
+					<li class="proList more">
+						<h3>了解更多请跳转至<a href="http://github.com/qirenji"> GitHub</a> 或 <a href="http://www.qirenji.info/about">博客</a> </h3>
+					</li>
 				</ul>
 			</div>
 			<div class="section">
@@ -93,7 +96,7 @@
 		</div>
 	</div>
 	<footer>
-		<p>本简历使用Vue框架开发. &nbsp<a href="resume.pdf" target="_blank">PDF下载</a> Made by qirenji.&nbsp <a href="http://www.qirenji.info" target="_blank">更多</a></p>
+		<p>本简历使用Vue框架做数据渲染. &nbsp<a href="resume.pdf" target="_blank">PDF下载</a> Made by qirenji.&nbsp <a href="http://www.qirenji.info" target="_blank">更多</a></p>
 	</footer>
 	<script src="js/index.min.js">
 	</script>
