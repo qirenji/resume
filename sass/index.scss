@@ -1,7 +1,7 @@
-$mainColor : #43beff;
-$secondColor : #07508B;
-$thirdColor : #fff;
-$Color : #118FCF;
+$mainColor : #bbb;
+$secondColor : #000;
+$thirdColor : #000;
+$Color : #222;
 
 #content {
 	width: 1060px;
@@ -19,7 +19,7 @@ $Color : #118FCF;
 	background-color: $mainColor;
 	padding: 15px 15px 10000px;
 	margin-bottom: -10000px;
-	color: #fff;
+	color: $Color;
 	line-height: 1.5;
 	box-sizing:border-box;
 
@@ -50,7 +50,7 @@ $Color : #118FCF;
 		}
 		.content {
 			font-size: 14px;
-			line-height: 24px;
+			line-height: 32px;
 			margin-left: 25px;
 			i{
 				margin-right:4px; 
@@ -87,7 +87,7 @@ $Color : #118FCF;
 		width: 90%;
 		margin: 70px auto;
 		font-size: 18px;
-		color: $secondColor;
+		color: $Color;
 	}
 }
 
@@ -114,19 +114,19 @@ $Color : #118FCF;
   		line-height: 28px;
   		margin-left: 35px;
   		margin-top: 20px;
-  		color: #666;
+  		color: $Color;
   		.proList{
   				padding: 0px 30px 20px 30px;
   				border-left: 2px solid $mainColor;
   			}
   		.more {
-  			color: #000;
+  			color: $Color;
   			a {
   				font-size: 16px;
   			}
   		}
   		.title{
-  			color: #000;
+  			color: $Color;
   			font-weight: bold;
   			padding-right: 4px;
   			position: relative;
@@ -149,7 +149,7 @@ $Color : #118FCF;
 	  				top: -2px;
 	  				margin-left: 20px;
 	  				margin-right: -10px;
-	  				border: 1px solid #EF6D8E;
+	  				border: 1px solid #000;
 	  				border-radius: 6px;
 	  				padding: 1px 4px;
 	  				font-size: 14px;
@@ -167,7 +167,7 @@ $Color : #118FCF;
   			}
   		}
   		a {
-  			color: #EF6D8E;
+  			color: $Color;
   		}
   	}
   }
@@ -177,10 +177,10 @@ footer {
 	margin: 30px 0 20px;
 	p{
 		text-align: center;
-		color: #616161;
+		color: $Color;
 		font-size: 14px;
 		a{
-			color: #EF6D8E;
+			color: $Color;
 			font-size: 13px;
 		}
 	}
